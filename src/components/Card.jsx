@@ -6,20 +6,42 @@ const Card = ({
     title,
     description,
     children,
-    width = 320,
-    height = 480,
+    width,
+    height,
     className = "",
 }) => {
-    const mediaHeight = height * 0.65;
-    const contentHeight = height * 0.35;
+    // Use provided dimensions or default to responsive sizing
+    const cardWidth = width || "w-full";
+    const cardHeight = height || "h-96";
+
+    // Calculate media and content heights based on height prop or default
+    const heightValue = typeof height === "number" ? height : 384; // 384px = h-96
+    const mediaHeight = heightValue * 0.65;
+    const contentHeight = heightValue * 0.35;
     const imageInset = 12;
+
+    // Check if width/height are Tailwind classes or pixel values
+    const isTailwindWidth =
+        typeof cardWidth === "string" && cardWidth.includes("w-");
+    const isTailwindHeight =
+        typeof cardHeight === "string" && cardHeight.includes("h-");
 
     return (
         <div
-            className={`inline-block rounded-2xl bg-gradient-ring ${className}`}
+            className={`inline-block rounded-2xl bg-gradient-ring ${className} ${
+                isTailwindWidth ? cardWidth : ""
+            } ${isTailwindHeight ? cardHeight : ""}`}
             style={{
-                width: `${width}px`,
-                height: `${height}px`,
+                width: isTailwindWidth
+                    ? undefined
+                    : typeof cardWidth === "number"
+                    ? `${cardWidth}px`
+                    : undefined,
+                height: isTailwindHeight
+                    ? undefined
+                    : typeof cardHeight === "number"
+                    ? `${cardHeight}px`
+                    : undefined,
                 padding: "2px",
             }}
         >
