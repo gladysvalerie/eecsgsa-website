@@ -34,7 +34,7 @@ const WhatWeDoSection = () => {
 
     return (
         <ReactLenis root>
-            <div ref={targetRef} className="bg-background relative py-16 md:py-24 mx-auto px-4 sm:px-6 lg:px-8">
+            <div ref={targetRef} className="bg-background relative py-16 md:py-24 mx-auto px-4 sm:px-6 lg:px-8 justify-center items-center">
                 <motion.div 
                     style={{ scale: animation[0].scale, opacity:animation[0].opacity, height: title_height-800 }}
                     className="sticky top-1/2 text-white text-5xl lg:text-6xl font-extrabold tracking-tight uppercase text-center">
@@ -42,25 +42,25 @@ const WhatWeDoSection = () => {
                         WHAT WE DO.
                     </h2>
                 </motion.div>
-
-                {cardData.map((card, index) => (
-                    <React.Fragment>
-                        <motion.div
-                            key={card.id}
-                            style={{ scale: animation[index+1].scale, opacity: animation[index+1].opacity}}
-                            // TODO: atur gapnya dong pls mar thanks
-                            className="sticky top-[60px] md:top-[100px] lg:top-[150px] flex items-center justify-center w-full max-w-4xl md:max-w-6xl lg:max-w-7xl"
-                            >
-                            <Card
-                                className="w-full h-[640px] md:h-[560px] lg:h-[640px]"
-                                imageSrc={card.imageSrc}
-                                imageAlt={card.imageAlt}
-                                description={card.description}
-                                />
-                        </motion.div>
-                        <div className="h-80"></div>
-                    </React.Fragment>
-                ))}    
+                <div className="flex flex-col items-center justify-center min-h-[300vh] relative">
+                    {cardData.map((card, index) => (
+                        <React.Fragment>
+                            <motion.div
+                                key={index+1}
+                                style={{ scale: animation[index+1].scale, opacity: animation[index+1].opacity}}
+                                className="sticky top-[60px] md:top-[100px] lg:top-[150px] flex items-center justify-center w-full max-w-4xl md:max-w-6xl lg:max-w-7xl"
+                                >
+                                <Card
+                                    className="w-full h-[640px] md:h-[560px] lg:h-[640px]"
+                                    imageSrc={card.imageSrc}
+                                    imageAlt={card.imageAlt}
+                                    description={card.description}
+                                    />
+                            </motion.div>
+                            <div className="h-80"></div>
+                        </React.Fragment>
+                    ))}    
+                </div>
             </div>
         </ReactLenis>
     );

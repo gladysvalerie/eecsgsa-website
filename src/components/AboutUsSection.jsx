@@ -4,6 +4,7 @@ import ButtonPrimary from "./ButtonPrimary";
 import { TfiArrowLeft, TfiArrowRight } from "react-icons/tfi";
 import cardImage from "../assets/test.JPG";
 import TextType from './testing/TextType';
+import Accordion from "./testing/Accordion";
 
 const AboutUsSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -70,56 +71,7 @@ const AboutUsSection = () => {
                 />
             </div>
 
-            <div className="relative flex items-center justify-center w-full overflow-hidden mt-8">
-                {/* Navigation arrows */}
-                <button
-                    onClick={goToPrevious}
-                    className="absolute left-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white cursor-pointer z-20 transition-colors"
-                >
-                    <TfiArrowLeft size={24} />
-                </button>
-
-                <button
-                    onClick={goToNext}
-                    className="absolute right-8 top-1/2 -translate-y-1/2 text-white/50 hover:text-white cursor-pointer z-20 transition-colors"
-                >
-                    <TfiArrowRight size={24} />
-                </button>
-
-                {/* Cards row */}
-                <div className="flex items-center justify-center gap-4 md:gap-12 lg:gap-16">
-                    {/* Previous card */}
-                    <div className="scale-90 opacity-40 transition-all duration-300">
-                        <SquareImageCard
-                            size="225px"
-                            imageSrc={carouselData[getCardIndex(-1)].imageSrc}
-                            imageAlt={carouselData[getCardIndex(-1)].imageAlt}
-                            type="secondary"
-                        />
-                    </div>
-
-                    {/* Current/active card */}
-                    <div className="transition-all duration-300">
-                        <SquareImageCard
-                            size="281px"
-                            imageSrc={carouselData[activeIndex].imageSrc}
-                            imageAlt={carouselData[activeIndex].imageAlt}
-                            caption={carouselData[activeIndex].caption}
-                            type="primary"
-                        />
-                    </div>
-
-                    {/* Next card */}
-                    <div className="scale-90 opacity-40 transition-all duration-300">
-                        <SquareImageCard
-                            size="225px"
-                            imageSrc={carouselData[getCardIndex(1)].imageSrc}
-                            imageAlt={carouselData[getCardIndex(1)].imageAlt}
-                            type="secondary"
-                        />
-                    </div>
-                </div>
-            </div>
+            <Accordion></Accordion>
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div className="flex justify-center">
