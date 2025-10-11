@@ -28,3 +28,20 @@
         );
     }
 }
+
+/* Hide scrollbar in Chrome, Safari, Edge */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar in Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.scroll-stack-card {
+  will-change: transform, filter;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

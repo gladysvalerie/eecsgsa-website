@@ -3,6 +3,7 @@ import SquareImageCard from "./SquareImageCard";
 import ButtonPrimary from "./ButtonPrimary";
 import { TfiArrowLeft, TfiArrowRight } from "react-icons/tfi";
 import cardImage from "../assets/test.JPG";
+import TextType from './testing/TextType';
 
 const AboutUsSection = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -56,11 +57,15 @@ const AboutUsSection = () => {
 
     return (
         <section className="relative bg-black py-16 md:py-24">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-white text-3xl md:text-5xl font-bold leading-tight max-w-3xl text-center md:text-left">
-                    As a student association, we are the EECS-GS students
-                    representative.
-                </h2>
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-[160px] sm:min-h-[200px] md:min-h-[240px] lg:min-h-[280px]">
+                <TextType 
+                  text={["As a student association, we are the EECS-GS students representative.", "for your websites", "Happy coding!"]}
+                  typingSpeed={75}
+                  pauseDuration={1500}
+                  showCursor={true}
+                  cursorCharacter="|"
+                  cursorClassName="text-white text-3xl md:text-5xl font-bold"
+                />
             </div>
 
             <div className="relative flex items-center justify-center w-full overflow-hidden mt-8">
