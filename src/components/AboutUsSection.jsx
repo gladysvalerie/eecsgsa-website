@@ -59,8 +59,10 @@ const AboutUsSection = () => {
         <section className="relative bg-black py-16 md:py-24">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-[160px] sm:min-h-[200px] md:min-h-[240px] lg:min-h-[280px]">
                 <TextType 
-                  text={["As a student association, we are the EECS-GS students representative.", "for your websites", "Happy coding!"]}
-                  typingSpeed={75}
+                  text={["As a student association, we are the EECS-GS students representative.", 
+                    "The dev cried when she's coding the animations of this website.", 
+                    "EECS-GSA are just a bunch of brain rot students that don't know what the fuck they're doing."]}
+                  typingSpeed={100}
                   pauseDuration={1500}
                   showCursor={true}
                   cursorCharacter="|"
