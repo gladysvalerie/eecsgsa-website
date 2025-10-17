@@ -1,5 +1,5 @@
 import React from "react";
-import orientationImage from "../../assets/orientation-1.jpg";
+import orientationImage from "../../assets/orientation.jpg";
 
 const ProjectHeroSection = ({
     title = "OUR PROJECTS",
@@ -14,7 +14,7 @@ const ProjectHeroSection = ({
                   to bottom,
                   rgba(0, 0, 0, 0) 0%,
                   rgba(0, 0, 0, 0.5) 50%,
-                  rgba(0, 0, 0, 1) 100%,
+                  rgba(0, 0, 0, 1) 100%
                 ),
                 url(${orientationImage})
               `,

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import GooeyNav from "../../components/testing/GooeyNav";
+import FlipCard from "../../components/FlipCard";
+import orientationImage from "../../assets/orientation.jpg";
 
 const ProjectContent = () => {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -28,10 +30,24 @@ const ProjectContent = () => {
               />
             </div>
 
-            <div className="mt-16 w-full max-w-3xl text-center px-6 transition-opacity duration-500">
+            <div className="w-full max-w-3xl md:max-w-5xl lg:max-w-6xl text-center px-6 transition-opacity">
                 {activeIndex === 0 && (
-                  <div>
-                    <h2 className="text-3xl font-semibold mb-4">Recent Updates</h2>
+                  <div className="flex flex-col justify-center items-center gap-y-8 py-8">
+                    <FlipCard
+                        imageSrc={orientationImage}
+                        title="ORIENTATION"
+                        backText="lalalalallalalallalalalala"
+                    />
+                    <FlipCard
+                        imageSrc={orientationImage}
+                        title="ORIENTATION"
+                        backText="lalalalallalalallalalalala"
+                    />
+                    <FlipCard
+                        imageSrc={orientationImage}
+                        title="ORIENTATION"
+                        backText="lalalalallalalallalalalala"
+                    />
                   </div>
                 )}
 
