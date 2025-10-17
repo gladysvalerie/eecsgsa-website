@@ -63,8 +63,8 @@ const AboutUsSection = () => {
                   text={["As a student association, we are the EECS-GS students representative.", 
                     "The dev cried when she's coding the animations of this website.", 
                     "EECS-GSA are just a bunch of brain rot students that don't know what the fuck they're doing."]}
-                  typingSpeed={100}
-                  pauseDuration={1500}
+                  typingSpeed={50}
+                  pauseDuration={150}
                   showCursor={true}
                   cursorCharacter="|"
                   cursorClassName="text-white text-3xl md:text-5xl font-bold"
