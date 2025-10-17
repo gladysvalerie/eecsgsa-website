@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegWindowClose } from "react-icons/fa";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [showNavbar, setShowNavbar] = useState(true);
+    const lastScrollY = useRef(0);
+    const hideTimer = useRef(null);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -15,9 +18,38 @@ const Navbar = () => {
         setIsMenuOpen(false);
     };
 
+    useEffect(() => {
+        const handleScroll = () => {
+          const currentScrollY = window.scrollY;
+
+          // Detect scroll direction
+          if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
+            // Scrolling down
+            setShowNavbar(false);
+          } else {
+            // Scrolling up
+            setShowNavbar(true);
+
+            // Reset auto-hide timer
+            clearTimeout(hideTimer.current);
+            hideTimer.current = setTimeout(() => {
+              setShowNavbar(false);
+            }, 2500); // hide after 2.5s of inactivity
+          }
+
+          lastScrollY.current = currentScrollY;
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+          clearTimeout(hideTimer.current);
+        };
+    }, []);
+
     return (
         <>
-            <nav className="fixed top-0 left-0 right-0 z-50 bg-transparent">
+            <nav className={`fixed top-0 left-0 right-0 z-50 transition-transform duration-500 ${showNavbar ? "translate-y-0" : "-translate-y-full"} bg-transparent`}>
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between md:justify-center h-16">
                         <img
