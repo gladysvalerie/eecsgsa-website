@@ -13,11 +13,13 @@ const Card = ({
     // Use provided dimensions or default to responsive sizing
     const cardWidth = width || "w-full";
     const cardHeight = height || "h-96";
-
+    
     // Calculate media and content heights based on height prop or default
     const heightValue = typeof height === "number" ? height : 384; // 384px = h-96
-    const mediaHeight = heightValue * 0.65;
-    const contentHeight = heightValue * 0.35;
+    const mediaHeight = heightValue * 0.7;
+    console.log(heightValue)
+ 
+    const contentHeight = heightValue * 0.3;
     const imageInset = 12;
 
     // Check if width/height are Tailwind classes or pixel values
@@ -25,7 +27,8 @@ const Card = ({
         typeof cardWidth === "string" && cardWidth.includes("w-");
     const isTailwindHeight =
         typeof cardHeight === "string" && cardHeight.includes("h-");
-
+      
+    
     return (
         <div
             className={`inline-block rounded-2xl bg-gradient-ring ${className} ${

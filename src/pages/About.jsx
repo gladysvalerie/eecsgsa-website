@@ -1,5 +1,11 @@
+import FlipCard from "../components/FlipCard";
+
 const About = () => {
-    return <div>About</div>;
+    return (
+        <div className="min-h-screen bg-black">
+
+        </div>
+    );
 };
 
 export default About;

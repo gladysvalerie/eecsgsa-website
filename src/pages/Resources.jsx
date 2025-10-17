@@ -1,5 +1,9 @@
 const Resources = () => {
-    return <div>Resources</div>;
+    return (
+        <div className="min-h-screen bg-black">
+
+        </div>
+    );
 };
 
 export default Resources;
