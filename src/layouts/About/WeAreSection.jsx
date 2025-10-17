@@ -1,8 +1,15 @@
 import React from "react";
 import orientationImage from "../../assets/orientation.jpg";
 import FluidGlass from "../../components/testing/FluidGlass"
+import FlowingMenu from "../../components/testing/FlowingMenu";
 
 const WeAreSection = () => {
+    const demoItems = [
+        {text: 'INNOVATIVE', image: orientationImage },
+        {text: 'GLOBAL', image: orientationImage },
+        {text: 'VISIONARY', image: orientationImage },
+        {text: 'COLLABORATIVE', image: orientationImage }
+    ];
     return (
         <section className="-mt-px bg-black flex flex-col items-center justify-center">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-8 md:gap-12 py-16 px-6">
@@ -10,7 +17,7 @@ const WeAreSection = () => {
                     className="w-full md:w-2/3 relative aspect-square md:aspect-auto md:h-[600px]"
                 >
                   <FluidGlass 
-                    mode="lens" // or "bar", "cube"
+                    mode="lens"
                     lensProps={{
                       scale: 0.25,
                       ior: 1.15,
@@ -33,9 +40,12 @@ const WeAreSection = () => {
                       screen.
                     </p>
                 </div>
-
-                
             </div>
+
+            <div className="relative w-full h-[600px]">
+                <FlowingMenu items={demoItems} />
+            </div>
+            <div className="h-30"></div>
         </section>
     );
 }
