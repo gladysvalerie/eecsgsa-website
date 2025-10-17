@@ -7,54 +7,6 @@ import TextType from '../../components/testing/TextType';
 import Accordion from "../../components/testing/Accordion";
 
 const AboutUsSection = () => {
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    // Sample data for the carousel - you can replace with actual content
-    const carouselData = [
-        {
-            imageSrc: cardImage,
-            imageAlt: "EECS-GSA Activity 1",
-            caption: "Student collaboration and innovation",
-        },
-        {
-            imageSrc: cardImage,
-            imageAlt: "EECS-GSA Activity 2",
-            caption: "Academic excellence and research",
-        },
-        {
-            imageSrc: cardImage,
-            imageAlt: "EECS-GSA Activity 3",
-            caption: "Community building and networking",
-        },
-        {
-            imageSrc: cardImage,
-            imageAlt: "EECS-GSA Activity 4",
-            caption: "Professional development",
-        },
-        {
-            imageSrc: cardImage,
-            imageAlt: "EECS-GSA Activity 5",
-            caption: "Leadership and mentorship",
-        },
-    ];
-
-    const goToPrevious = () => {
-        setActiveIndex((prev) =>
-            prev === 0 ? carouselData.length - 1 : prev - 1
-        );
-    };
-
-    const goToNext = () => {
-        setActiveIndex((prev) =>
-            prev === carouselData.length - 1 ? 0 : prev + 1
-        );
-    };
-
-    const getCardIndex = (offset) => {
-        const index =
-            (activeIndex + offset + carouselData.length) % carouselData.length;
-        return index;
-    };
 
     return (
         <section className="relative bg-black py-16 md:py-24">
