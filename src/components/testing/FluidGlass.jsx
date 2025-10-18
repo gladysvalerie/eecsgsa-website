@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from 'react';
 import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber';
 import { useFBO, useGLTF, MeshTransmissionMaterial, Image, Preload } from '@react-three/drei';
 import { easing } from 'maath';
-import orientationImage from "../../assets/orientation.jpg";
+import orientationImage from "../../assets/orientation-1.jpg";
 
 // ---------- MAIN COMPONENT ----------
 export default function FluidGlassLens() {

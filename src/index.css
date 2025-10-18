@@ -59,3 +59,9 @@
 .card-wrapper {
   display: contents;
 }
+
+.card__content h3, 
+.card__content p {
+  backface-visibility: hidden;
+  will-change: transform, opacity;
+}

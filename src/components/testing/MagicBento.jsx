@@ -13,37 +13,43 @@ const cardData = [
     color: '#060010',
     title: 'IA',
     ref: 'internal-affairs',
-    image: orientationImage
-  },
-  {
-    color: '#060010',
-    title: 'PR',
-    ref: 'public-relations',
-    image: orientationImage
-  },
-  {
-    color: '#060010',
-    title: 'MAR',
-    ref: 'marketing',
-    image: orientationImage
+    image: orientationImage,
+    hoverText: 'Internal Affairs'
   },
   {
     color: '#060010',
     title: 'FIN',
     ref: 'finance',
-    image: orientationImage
+    image: orientationImage,
+    hoverText: 'Finance'
+  },
+  {
+    color: '#060010',
+    title: 'PR',
+    ref: 'public-relations',
+    image: orientationImage,
+    hoverText: 'Public Relations'
+  },
+  {
+    color: '#060010',
+    title: 'MAR',
+    ref: 'marketing',
+    image: orientationImage,
+    hoverText: 'Marketing'
   },
   {
     color: '#060010',
     title: 'AA',
     ref: 'academic-affairs',
-    image: orientationImage
+    image: orientationImage,
+    hoverText: 'Academic Affairs'
   },
   {
     color: '#060010',
     title: 'SA',
     ref: 'student-affairs',
-    image: orientationImage
+    image: orientationImage,
+    hoverText: 'Student Affairs'
   }
 ];
 
@@ -312,7 +318,7 @@ const ParticleCard = ({
     <div
       ref={cardRef}
       onClick={onClick}
-      className={`${className} relative overflow-hidden`}
+      className={`${className} group relative overflow-hidden`}
       style={{ ...style, position: 'relative', overflow: 'hidden' }}
     >
       {children}
@@ -454,7 +460,7 @@ const GlobalSpotlight = ({
 
 const BentoCardGrid = ({ children, gridRef }) => (
   <div
-    className="bento-section grid gap-2 p-3 max-w-[54rem] select-none relative"
+    className="bento-section grid gap-2 p-3 max-w-[150rem] w-full mx-auto select-none relative"
     style={{ fontSize: 'clamp(1rem, 0.9rem + 0.5vw, 1.5rem)' }}
     ref={gridRef}
   >
@@ -675,9 +681,16 @@ const MagicBento = ({
                     enableMagnetism={enableMagnetism}
                   >
                   <div className="card__content flex items-center justify-center relative text-white h-full">
-                    <h3 className={`card__title text-4xl md:text-6xl lg:text-7xl font-bold m-0 ${textAutoHide ? 'text-clamp-1' : ''}`}>
+                    {/* <h3 className={`card__title text-6xl md:text-8xl lg:text-9xl font-bold m-0 ${textAutoHide ? 'text-clamp-1' : ''}`}>
                       {card.title}
+                    </h3> */}
+                    <h3 className="absolute flex items-center justify-center text-8xl lg:text-9xl font-bold transition-all duration-500 ease-out group-hover:opacity-0 group-hover:translate-y-[-20px]">
+                        {card.title}
                     </h3>
+
+                    <p className="absolute flex items-center justify-center text-center w-full px-6 text-5xl font-bold leading-snug opacity-0 translate-y-6 transition-all duration-500 ease-out group-hover:opacity-100 group-hover:translate-y-0">
+                        {card.hoverText || 'Learn more'}
+                    </p>
                   </div>
                 </ParticleCard>
               );

@@ -6,10 +6,11 @@ import Projects from "./pages/Projects";
 import Resources from "./pages/Resources";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import SmoothScroll from "./SmoothScroll";
 
 function App() {
     return (
-        <>
+        <SmoothScroll>
             <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -19,7 +20,7 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
-        </>
+        </SmoothScroll>
     );
 }
 

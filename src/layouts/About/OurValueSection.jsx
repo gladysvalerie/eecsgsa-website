@@ -4,8 +4,13 @@ import orientationImage from "../../assets/orientation.jpg";
 const OurValueSection = () => {
 
     return (
-        <section className="-mt-px bg-black flex flex-col items-center justify-center">
-            
+        <section className="flex flex-col items-start md:items-center gap-8 md:gap-12 py-16 px-6">
+            <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white">
+                OUR VALUE.
+            </h2>
+            <div className="flex flex-col md:flex-row">
+                
+            </div>
         </section>
     );
 }
