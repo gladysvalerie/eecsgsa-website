@@ -88,7 +88,7 @@ function LinkButton({ title = "Open Link", href = "#", newTab = true }) {
         shadow-sm
       "
         >
-            <span className="text-4xl font-bold text-black">{title}</span>
+            <span className="text-2xl font-bold text-black">{title}</span>
             <ExternalLink className="ml-2 w-10 h-10" />
         </a>
     );
@@ -128,14 +128,14 @@ function InfoCard({
             ${className}
         `}
         >
-            <h2 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4">
+            <h2 className="text-2xl md:text-4xl lg:text-6xl font-bold mb-4">
                 {title}
             </h2>
             <ul className="space-y-2 text-black">
                 {items.map((item, index) => (
                     <li
                         key={index}
-                        className="flex items-start text-2xl md:text-3xl"
+                        className="flex items-start text-xl md:text-3xl"
                     >
                         {item}
                     </li>
