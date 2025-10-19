@@ -1,14 +1,14 @@
 import React from "react";
-import orientationImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 import FluidGlass from "../../components/testing/FluidGlass"
 import FlowingMenu from "../../components/testing/FlowingMenu";
 
 const WeAreSection = () => {
     const demoItems = [
-        {text: 'INNOVATIVE', image: orientationImage },
-        {text: 'GLOBAL', image: orientationImage },
-        {text: 'VISIONARY', image: orientationImage },
-        {text: 'COLLABORATIVE', image: orientationImage }
+        {text: 'INNOVATIVE', image: orientation },
+        {text: 'GLOBAL', image: orientation },
+        {text: 'VISIONARY', image: orientation },
+        {text: 'COLLABORATIVE', image: orientation }
     ];
     return (
         <section className="-mt-px bg-black flex flex-col items-center justify-center">
@@ -32,12 +32,8 @@ const WeAreSection = () => {
                     <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-white">
                       WE ARE EECS-GSA.
                     </h2>
-                    <p className="text-white/80 leading-relaxed max-w-prose">
-                      This paragraph aligns to the left but never stretches beyond the
-                      image’s boundary. On large screens, the text and image sit side by
-                      side. On small screens, they stack. The `max-w-prose` keeps your text
-                      comfortably readable rather than stretching to the full width of the
-                      screen.
+                    <p className="text-white/80 text-lg leading-relaxed max-w-prose">
+                      The EECS Global Student Association represents and connects international and local students across the Department of Electrical Engineering and Computer Science. We foster collaboration, professional growth, and cultural exchange through events, mentorship, and advocacy, ensuring every student thrives academically and personally within our global community.
                     </p>
                 </div>
             </div>

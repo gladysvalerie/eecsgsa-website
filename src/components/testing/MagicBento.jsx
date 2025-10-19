@@ -1,6 +1,6 @@
 import { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
-import orientationImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 import { useNavigate } from 'react-router-dom';
 
 const DEFAULT_PARTICLE_COUNT = 12;
@@ -13,42 +13,42 @@ const cardData = [
     color: '#060010',
     title: 'IA',
     ref: 'internal-affairs',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Internal Affairs'
   },
   {
     color: '#060010',
     title: 'FIN',
     ref: 'finance',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Finance'
   },
   {
     color: '#060010',
     title: 'PR',
     ref: 'public-relations',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Public Relations'
   },
   {
     color: '#060010',
     title: 'MAR',
     ref: 'marketing',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Marketing'
   },
   {
     color: '#060010',
     title: 'AA',
     ref: 'academic-affairs',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Academic Affairs'
   },
   {
     color: '#060010',
     title: 'SA',
     ref: 'student-affairs',
-    image: orientationImage,
+    image: orientation,
     hoverText: 'Student Affairs'
   }
 ];

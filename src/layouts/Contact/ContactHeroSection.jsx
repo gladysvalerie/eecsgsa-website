@@ -1,5 +1,5 @@
 import React from "react";
-import orientationImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 
 const ContactHeroSection = ({
     title = "CONTACT US",
@@ -16,7 +16,7 @@ const ContactHeroSection = ({
                   rgba(0, 0, 0, 0.5) 50%,
                   rgba(0, 0, 0, 1) 100%
                 ),
-                url(${orientationImage})
+                url(${orientation})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",

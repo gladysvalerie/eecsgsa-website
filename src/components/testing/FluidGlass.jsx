@@ -5,7 +5,7 @@ import { useRef, useState, useEffect } from 'react';
 import { Canvas, createPortal, useFrame, useThree } from '@react-three/fiber';
 import { useFBO, useGLTF, MeshTransmissionMaterial, Image, Preload } from '@react-three/drei';
 import { easing } from 'maath';
-import orientationImage from "../../assets/orientation-1.jpg";
+import { orientation } from "@/assets";
 
 // ---------- MAIN COMPONENT ----------
 export default function FluidGlassLens() {
@@ -28,7 +28,7 @@ function Scene() {
   const background = (
     <group>
       <Image
-        url={orientationImage}
+        url={orientation}
         scale={[viewport.width, viewport.height, 1]}
         position={[0, 0, 0]}
       />

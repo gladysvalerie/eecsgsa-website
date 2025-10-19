@@ -1,5 +1,4 @@
 import React from "react";
-import orientationImage from "../../assets/orientation.jpg";
 import MagicBento from "../../components/testing/MagicBento";
 
 const OurTeamSection = () => {
@@ -22,6 +21,7 @@ const OurTeamSection = () => {
               glowColor="92, 71, 148"
               
             />
+            <div className="h-20"></div>
         </section>
     );
 }

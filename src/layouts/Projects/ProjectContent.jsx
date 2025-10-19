@@ -1,7 +1,7 @@
 import { useState } from "react";
 import GooeyNav from "../../components/testing/GooeyNav";
 import FlipCard from "../../components/FlipCard";
-import orientationImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 
 const ProjectContent = () => {
     const [activeIndex, setActiveIndex] = useState(0)
@@ -34,17 +34,17 @@ const ProjectContent = () => {
                 {activeIndex === 0 && (
                   <div className="flex flex-col justify-center items-center gap-y-8 py-8">
                     <FlipCard
-                        imageSrc={orientationImage}
+                        imageSrc={orientation}
                         title="ORIENTATION"
                         backText="lalalalallalalallalalalala"
                     />
                     <FlipCard
-                        imageSrc={orientationImage}
+                        imageSrc={orientation}
                         title="ORIENTATION"
                         backText="lalalalallalalallalalalala"
                     />
                     <FlipCard
-                        imageSrc={orientationImage}
+                        imageSrc={orientation}
                         title="ORIENTATION"
                         backText="lalalalallalalallalalalala"
                     />

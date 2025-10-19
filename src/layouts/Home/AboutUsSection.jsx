@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import SquareImageCard from "../../components/SquareImageCard";
 import ButtonPrimary from "../../components/ButtonPrimary";
 import { TfiArrowLeft, TfiArrowRight } from "react-icons/tfi";
-import cardImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 import TextType from '../../components/testing/TextType';
 import Accordion from "../../components/testing/Accordion";
 
 const AboutUsSection = () => {
 
     return (
-        <section className="relative bg-black py-16 md:py-24">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-[160px] sm:min-h-[200px] md:min-h-[240px] lg:min-h-[280px]">
+        <section className="relative bg-black py-16 md:py-30">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 min-h-[320px]">
                 <TextType 
-                  text={["As a student association, we are the EECS-GS students representative.", 
-                    "The dev cried when she's coding the animations of this website.", 
-                    "EECS-GSA are just a bunch of brain rot students that don't know what the fuck they're doing."]}
+                  text={["Dream boldly and build fearlessly—your ideas have the power to shape the future of technology when shared with others.", 
+                    "Connect across borders and discover a global community of EECS students who turn curiosity into collaboration.", 
+                    "Grow together and rise together as you learn, create, and innovate in a space where everyone belongs and every idea sparks possibility."]}
                   typingSpeed={50}
                   pauseDuration={500}
                   showCursor={true}
@@ -27,7 +27,7 @@ const AboutUsSection = () => {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div className="flex justify-center">
-                    <ButtonPrimary width="160px" height="44px">
+                    <ButtonPrimary className=" ">
                         About us
                     </ButtonPrimary>
                 </div>

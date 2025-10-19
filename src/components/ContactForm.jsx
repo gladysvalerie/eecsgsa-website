@@ -26,7 +26,7 @@ const ContactForm = () => {
     return (
         <div className="w-full max-w-2xl mx-auto">
             {/* Outer container with gradient ring */}
-            <div className="rounded-2xl bg-gradient-ring p-[2px]">
+            <div className="rounded-2xl bg-gradient-ring p-[6px]">
                 {/* Inner wrapper with black background */}
                 <div className="bg-black rounded-2xl p-6">
                     <form

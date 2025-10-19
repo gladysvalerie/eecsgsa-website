@@ -1,15 +1,12 @@
 import { useState } from "react";
-import testImg from "../../assets/test.JPG";
-import fuImg from "../../assets/fu.png";
+import { orientation, orientation1, networking241, gradparty24, welpar1, welpar2 } from "@/assets";
 
 const items = [
-  { image: testImg, header: "Header 1", text: "Description 1" },
-  { image: fuImg, header: "Header 2", text: "Description 2" },
-  { image: testImg, header: "Header 3", text: "Description 3" },
-  { image: testImg, header: "Header 1", text: "Description 1" },
-  { image: testImg, header: "Header 1", text: "Description 1" },
-  { image: testImg, header: "Header 1", text: "Description 1" },
-  { image: testImg, header: "Header 1", text: "Description 1" },
+  { image: welpar1, header: "Inspiring Minds", text: "Connecting global EECS students through innovation, collaboration, and community." },
+  { image: orientation1, header: "Beyond Circuits and Code", text: "We’re a collective of dreamers, builders, and thinkers shaping the future together." },
+  { image: networking241, header: "United in Innovation", text: "Bringing together diverse minds to create, learn, and grow as one EECS community." },
+  { image: gradparty24, header: "The Pulse of EECS", text: "A vibrant network of thinkers, makers, and leaders shaping what comes next." },
+  { image: welpar2, header: "Tech Meets Humanity", text: "We believe innovation shines brightest when it’s powered by empathy and shared purpose." },
 ];
 
 export default function Accordion() {

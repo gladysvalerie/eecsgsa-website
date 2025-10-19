@@ -1,9 +1,9 @@
 import React from "react";
-import orientationImage from "../../assets/orientation.jpg";
+import { orientation } from "@/assets";
 
 const AboutHeroSection = ({
     title = "ABOUT US",
-    subtitle = "Ranging from events to professional programs"
+    subtitle = "Grow together and rise together as you learn, create, and innovate in a space where everyone belongs and every idea sparks possibility."
 }) => {
     return (
         <section
@@ -16,7 +16,7 @@ const AboutHeroSection = ({
                   rgba(0, 0, 0, 0.5) 50%,
                   rgba(0, 0, 0, 1) 100%
                 ),
-                url(${orientationImage})
+                url(${orientation})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",

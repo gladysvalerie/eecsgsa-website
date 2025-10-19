@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Card from "../../components/Card";
 import ButtonPrimary from "../../components/ButtonPrimary";
-import orientation from "../../assets/orientation.jpg";
+import { orientation, welpar, networking242 } from "@/assets";
 import { useScroll, useTransform, motion} from "framer-motion"
 import useWindowSize from "../../components/hooks/useWindowSize";
 import { ReactLenis } from "lenis/react";
@@ -53,7 +53,7 @@ const WhatWeDoSection = () => {
                                     >
                                     <Card
                                         className="w-full h-[640px] md:h-[560px] lg:h-[640px]"
-                                        title="Orientation"
+                                        title={card.title}
                                         imageSrc={card.imageSrc}
                                         imageAlt={card.imageAlt}
                                         description={card.description}
@@ -67,7 +67,7 @@ const WhatWeDoSection = () => {
             </ReactLenis>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div className="flex justify-center">
-                    <ButtonPrimary width="160px" height="44px">
+                    <ButtonPrimary>
                         See more
                     </ButtonPrimary>
                 </div>
@@ -82,22 +82,25 @@ const cardData = [
   {
     id: 1,
     imageSrc: orientation,
-    imageAlt: "Card 1 image",
+    imageAlt: "Global minds. Electric ideas.",
+    title: "Global minds. Electric ideas.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "We bring together students from around the world who share a passion for technology, creativity, and collaboration. Our goal is to spark innovation through cultural diversity and shared curiosity."
   },
   {
     id: 2,
-    imageSrc: orientation,
-    imageAlt: "Card 2 image",
+    imageSrc: welpar,
+    imageAlt: "Connecting EECS Students Worldwide.",
+    title: "Connecting EECS Students Worldwide.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "We build bridges across disciplines, programs, and countries—linking students, researchers, and professionals through events, mentorship, and networking opportunities. No matter where you come from, you belong in this community."
   },
   {
     id: 3,
-    imageSrc: orientation,
-    imageAlt: "Card 3 image",
+    imageSrc: networking242,
+    imageAlt: "Where Innovation Meets Community.",
+    title: "Where Innovation Meets Community.",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      "We believe great ideas grow best in supportive spaces. From workshops and hackathons to social gatherings, we create experiences that connect people, inspire learning, and make EECS feel like home."
   },
 ];

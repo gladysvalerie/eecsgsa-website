@@ -1,34 +1,30 @@
 import React from "react";
 
 const GradientRingButton = ({
-    children,
-    className = "",
-    onClick,
-    width,
-    height,
-    rounded = "rounded-full",
+  children,
+  className = "",
+  onClick,
+  rounded = "rounded-full",
 }) => {
-    return (
-        <div
-            className={`block ${rounded} bg-gradient-ring ${className}`}
-            style={{
-                width: width || "fit-content",
-                height: height || "auto",
-                minWidth: width ? undefined : "fit-content",
-                minHeight: height ? undefined : "fit-content",
-                padding: "2px",
-            }}
-        >
-            <button
-                className={`w-full h-full bg-[#5A3A92] ${rounded} cursor-pointer flex items-center justify-center px-6 py-2`}
-                onClick={onClick}
-            >
-                <span className="text-white font-medium font-inter text-sm whitespace-nowrap">
-                    {children}
-                </span>
-            </button>
-        </div>
-    );
+  return (
+    <div
+      className={`w-[140px] h-[40px]
+                  sm:w-[160px] sm:h-[44px]
+                  md:w-[180px] md:h-[50px]
+                  lg:w-[200px] lg:h-[56px] 
+                  inline-block ${rounded} bg-gradient-ring p-[5px] transition-all duration-300 hover:scale-[1.05] ${className}`}
+    >
+      <button
+        className={`w-full h-full ${rounded} cursor-pointer flex items-center justify-center 
+          bg-black backdrop-blur-sm
+          px-8 py-4 text-white sm:text-base md:text-xl font-semibold font-inter 
+          `}
+        onClick={onClick}
+      >
+        <span className="whitespace-nowrap">{children}</span>
+      </button>
+    </div>
+  );
 };
 
 export default GradientRingButton;

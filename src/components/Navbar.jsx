@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
-import logo from "../assets/logo.svg";
+import { logo } from "@/assets";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaRegWindowClose } from "react-icons/fa";
 

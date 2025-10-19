@@ -1,5 +1,4 @@
 import React from "react";
-import orientationImage from "../../assets/orientation.jpg";
 
 const OurValueSection = () => {
 

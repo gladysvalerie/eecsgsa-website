@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import fullLogo from "../assets/full-logo.png";
+import { fullLogo } from "@/assets";
 
 const Footer = () => {
     return (

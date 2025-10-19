@@ -2,7 +2,7 @@ import HeroSection from "../layouts/Home/HeroSection";
 import WhatWeDoSection from "../layouts/Home/WhatWeDoSection";
 import AboutUsSection from "../layouts/Home/AboutUsSection";
 import ContactSection from "../layouts/Home/ContactSection";
-import logo from "../assets/logo.svg";
+import { logo } from "@/assets";
 
 const Home = () => {
     return (
