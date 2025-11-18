@@ -3,7 +3,7 @@ import { orientation } from "@/assets";
 
 const ResourcesHeroSection = ({
     title = "RESOURCES",
-    subtitle = "Ranging from events to professional programs"
+    subtitle = "Everything you need to stay informed and on track"
 }) => {
     return (
         <section

@@ -3,7 +3,7 @@ import { orientation } from "@/assets";
 
 const ContactHeroSection = ({
     title = "CONTACT US",
-    subtitle = "Ranging from events to professional programs" // pls edit
+    subtitle = "Get in touch with our team." // pls edit
 }) => {
     return (
         <section
@@ -30,7 +30,9 @@ const ContactHeroSection = ({
                     {subtitle}
                 </p>
             </div>
+            
         </section>
+        
     );
 }
 
