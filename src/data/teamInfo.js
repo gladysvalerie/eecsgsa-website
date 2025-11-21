@@ -3,15 +3,29 @@ import orientation from "../assets/orientation/orientation.jpg";
 const teamInfo = {
   "internal-affairs": {
     title: "INTERNAL AFFAIRS",
-    subtitle: "Keeping everything running smoothly behind the scenes.",
-    image: orientation,
-    description:
-      "The Internal Affairs division ensures seamless coordination, administration, and internal communication. We maintain structure, support inter-department operations, and make sure everything runs like a well-oiled machine.",
-    members: [
-      { name: "Nahathai Wonganawat", title: "President" },
-      { name: "Napat Pipatchotitham", title: "Vice President" },
-      { name: "Gladys Valerie", title: "Secretary of Association" },
-      { name: "Christopher Samuel Fong", title: "Secretary Assistant" }
+    sections: [
+      {
+        title: "PRESIDENT & VICE PRESIDENT",
+        subtitle: "President and Vice President",
+        image: orientation,
+        description:
+          "The President and Vice President lead the Internal Affairs division and ensure seamless coordination.",
+        members: [
+          { name: "Nahathai Wonganawat", title: "President" },
+          { name: "Napat Pipatchotitham", title: "Vice President" },
+        ]
+      },
+      {
+        title: "SECRETARY & ASSISTANT",
+        subtitle: "Secretary and Assistant",
+        image: orientation,
+        description:
+          "The Secretary and Secretary Assistant manage administration and internal communication.",
+        members: [
+          { name: "Gladys Valerie", title: "Secretary of Association" },
+          { name: "Christopher Samuel Fong", title: "Secretary Assistant" },
+        ]
+      }
     ]
   },
 

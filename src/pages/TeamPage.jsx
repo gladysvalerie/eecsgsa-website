@@ -11,15 +11,32 @@ export default function TeamPage() {
 
   return (
     <>
-      <AboutHeroSection title={info.title} subtitle={info.subtitle} />
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <TeamSection
-          image={info.image}
-          title={info.title}
-          subtitle={info.subtitle}
-          description={info.description}
-          members={info.members}
-        />
+      <AboutHeroSection 
+        title={info.title} 
+        subtitle={info.subtitle || ""} 
+      />
+
+      <div className="max-w-6xl mx-auto px-6 py-16 space-y-20">
+        {info.sections
+          ? info.sections.map((section, idx) => (
+              <TeamSection
+                key={idx}
+                image={section.image}
+                title={section.title}
+                subtitle={section.subtitle}
+                description={section.description}
+                members={section.members}
+              />
+            ))
+          : (
+              <TeamSection
+                image={info.image}
+                title={info.title}
+                subtitle={info.subtitle}
+                description={info.description}
+                members={info.members}
+              />
+            )}
       </div>
     </>
   );
