@@ -16,7 +16,7 @@ const OurValueSection = () => {
         />
       </div>
         <FlowingTextBackground 
-        text="COLLABORATION. INNOVA. KIJANG. FORTUNER" 
+        text="COLLABORATION. INNOVATE. CREATE." 
         speed={70} // smaller = slower
         />
 

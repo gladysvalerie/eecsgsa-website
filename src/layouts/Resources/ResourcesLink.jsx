@@ -22,6 +22,10 @@ export default function ResourcesLink() {
             title: "Work Permit",
             href: "https://ezwp.wda.gov.tw/wcfonline/wSite/Control?function=IndexPage",
         },
+        BookLounge: {
+            title: "EECS Lounge Booking",
+            href: "https://ezwp.wda.gov.tw/wcfonline/wSite/Control?function=IndexPage",
+        },
     };
 
     const infoCards = {
