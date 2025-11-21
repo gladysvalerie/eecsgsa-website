@@ -2,6 +2,10 @@ import { useRef, useEffect, useState, useCallback } from 'react';
 import { gsap } from 'gsap';
 import { orientation } from "@/assets";
 import { useNavigate } from 'react-router-dom';
+import MARKETING from "@/assets/Team/MARKETING.jpg";
+import INTERNAL from "@/assets/Team/INTERNAL.jpg";
+import PR from "@/assets/Team/PR.jpg";
+import ACADEMIC from "@/assets/Team/ACADEMIC.jpg";
 
 const DEFAULT_PARTICLE_COUNT = 12;
 const DEFAULT_SPOTLIGHT_RADIUS = 300;
@@ -13,7 +17,7 @@ const cardData = [
     color: '#060010',
     title: 'IA',
     ref: 'internal-affairs',
-    image: orientation,
+    image: INTERNAL,
     hoverText: 'Internal Affairs'
   },
   {
@@ -27,21 +31,21 @@ const cardData = [
     color: '#060010',
     title: 'PR',
     ref: 'public-relations',
-    image: orientation,
+    image: PR,
     hoverText: 'Public Relations'
   },
   {
     color: '#060010',
     title: 'MAR',
     ref: 'marketing',
-    image: orientation,
+    image: MARKETING,
     hoverText: 'Marketing'
   },
   {
     color: '#060010',
     title: 'AA',
     ref: 'academic-affairs',
-    image: orientation,
+    image: ACADEMIC,
     hoverText: 'Academic Affairs'
   },
   {
