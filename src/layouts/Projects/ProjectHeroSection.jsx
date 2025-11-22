@@ -1,5 +1,5 @@
 import React from "react";
-import { orientation } from "@/assets";
+import { networkingg } from "@/assets";
 
 const ProjectHeroSection = ({
     title = "OUR PROJECTS",
@@ -16,7 +16,7 @@ const ProjectHeroSection = ({
                   rgba(0, 0, 0, 0.5) 50%,
                   rgba(0, 0, 0, 1) 100%
                 ),
-                url(${orientation})
+                url(${networkingg})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",

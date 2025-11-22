@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import SquareImageCard from "../../components/SquareImageCard";
 import ButtonPrimary from "../../components/ButtonPrimary";
 import { TfiArrowLeft, TfiArrowRight } from "react-icons/tfi";
-import { orientation } from "@/assets";
+import { orientation } from "@/assets"; //unuse?
 import TextType from '../../components/testing/TextType';
 import Accordion from "../../components/testing/Accordion";
+import { Link } from "react-router-dom";
 
 const AboutUsSection = () => {
 
@@ -27,9 +28,11 @@ const AboutUsSection = () => {
 
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div className="flex justify-center">
+                    <Link to="about">
                     <ButtonPrimary className=" ">
                         About us
                     </ButtonPrimary>
+                    </Link>
                 </div>
             </div>
         </section>

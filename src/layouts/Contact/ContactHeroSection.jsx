@@ -1,5 +1,6 @@
 import React from "react";
-import { orientation } from "@/assets";
+import { CLIU } from "@/assets";
+
 
 const ContactHeroSection = ({
     title = "CONTACT US",
@@ -16,7 +17,7 @@ const ContactHeroSection = ({
                   rgba(0, 0, 0, 0.5) 50%,
                   rgba(0, 0, 0, 1) 100%
                 ),
-                url(${orientation})
+                url(${CLIU})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",

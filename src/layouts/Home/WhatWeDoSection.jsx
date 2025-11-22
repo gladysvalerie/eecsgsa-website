@@ -5,6 +5,7 @@ import { orientation, welpar, networking242 } from "@/assets";
 import { useScroll, useTransform, motion} from "framer-motion"
 import useWindowSize from "../../components/hooks/useWindowSize";
 import { ReactLenis } from "lenis/react";
+import { Link } from "react-router-dom";
 
 const WhatWeDoSection = () => {
     const targetRef = useRef(null);
@@ -67,9 +68,11 @@ const WhatWeDoSection = () => {
             </ReactLenis>
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-8">
                 <div className="flex justify-center">
+                    <Link to="projects">
                     <ButtonPrimary>
                         See more
                     </ButtonPrimary>
+                    </Link>
                 </div>
             </div>
         </>

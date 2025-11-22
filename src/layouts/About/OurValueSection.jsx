@@ -1,5 +1,5 @@
 import React from "react";
-import { orientation } from "@/assets";
+import { welpar } from "@/assets";
 import FlowingTextBackground from "./FlowingTextBackground";
 
 const OurValueSection = () => {
@@ -11,7 +11,7 @@ const OurValueSection = () => {
       
       <div className="relative w-full max-w-3xl h-[400px] md:h-[500px]">
         <img
-          src={orientation}
+          src={welpar}
           className="w-full h-full object-cover rounded-xl z-10 relative"
         />
       </div>

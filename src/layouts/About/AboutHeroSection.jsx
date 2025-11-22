@@ -1,5 +1,5 @@
 import React from "react";
-import { orientation } from "@/assets";
+import { welpar } from "@/assets";
 
 const AboutHeroSection = ({
     title = "ABOUT US",
@@ -16,7 +16,7 @@ const AboutHeroSection = ({
                   rgba(0, 0, 0, 0.5) 50%,
                   rgba(0, 0, 0, 1) 100%
                 ),
-                url(${orientation})
+                url(${welpar})
               `,
               backgroundSize: "cover",
               backgroundPosition: "center",

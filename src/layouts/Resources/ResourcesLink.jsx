@@ -6,10 +6,6 @@ export default function ResourcesLink() {
             title: "Academic Calendar 25/26",
             href: "https://dgaa.site.nthu.edu.tw/var/file/209/1209/img/275/2025-2026calendar_20250319.pdf",
         },
-        studentHandbook: {
-            title: "EECS-GSA Handbook",
-            href: "https://university.edu/handbook",
-        },
         workClassStatus: {
             title: "Work and Class Status",
             href: "https://www.dgpa.gov.tw/typh/daily/ndse.html",
@@ -20,10 +16,6 @@ export default function ResourcesLink() {
         },
         workPermit: {
             title: "Work Permit",
-            href: "https://ezwp.wda.gov.tw/wcfonline/wSite/Control?function=IndexPage",
-        },
-        BookLounge: {
-            title: "EECS Lounge Booking",
             href: "https://ezwp.wda.gov.tw/wcfonline/wSite/Control?function=IndexPage",
         },
     };

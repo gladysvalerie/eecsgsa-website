@@ -1,14 +1,17 @@
 import React from "react";
-import { orientation } from "@/assets";
+import { MUSIC } from "@/assets"
+import { gradparty24 } from "@/assets"
+import { welpar3 } from "@/assets"
+import { welpar6 } from "@/assets";
 import FluidGlass from "../../components/testing/FluidGlass"
 import FlowingMenu from "../../components/testing/FlowingMenu";
 
 const WeAreSection = () => {
     const demoItems = [
-        {text: 'INNOVATIVE', image: orientation },
-        {text: 'GLOBAL', image: orientation },
-        {text: 'VISIONARY', image: orientation },
-        {text: 'COLLABORATIVE', image: orientation }
+        {text: 'INNOVATIVE', image: MUSIC },
+        {text: 'GLOBAL', image: gradparty24 },
+        {text: 'VISIONARY', image: welpar3 },
+        {text: 'COLLABORATIVE', image: welpar6 }
     ];
     return (
         <section className="-mt-px bg-black flex flex-col items-center justify-center">

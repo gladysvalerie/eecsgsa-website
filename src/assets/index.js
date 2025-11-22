@@ -8,6 +8,7 @@ import welpar2 from "./welpar/welpar-2.JPG"
 import welpar3 from "./welpar/welpar-3.JPG"
 import welpar4 from "./welpar/welpar-4.JPG"
 import welpar5 from "./welpar/welpar-5.JPG"
+import welpar6 from "./welpar/welpar-6.JPG"
 import networking24 from "./networking/24-networking.PNG"
 import networking241 from "./networking/24-networking-1.JPG"
 import networking242 from "./networking/24-networking-2.JPG"
@@ -18,6 +19,9 @@ import gradparty242 from "./grad-party/24-grad-party-2.JPG"
 import gradparty243 from "./grad-party/24-grad-party-3.JPG"
 import gradparty244 from "./grad-party/24-grad-party-4.JPG"
 import gradparty245 from "./grad-party/24-grad-party-5.JPG"
+import networkingg from "./networking2/networkingg.jpg"
+import CLIU from "./building/CLIU.jpg"
+import MUSIC from "./networking2/MUSIC.jpg"
 
 export {
     fullLogo,
@@ -34,10 +38,14 @@ export {
     welpar3,
     welpar4,
     welpar5,
+    welpar6,
     gradparty24,
     gradparty241,
     gradparty242,
     gradparty243,
     gradparty244,
-    gradparty245
+    gradparty245,
+    networkingg,
+    CLIU,
+    MUSIC
 };
