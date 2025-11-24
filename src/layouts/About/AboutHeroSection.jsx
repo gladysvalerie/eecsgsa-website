@@ -23,10 +23,10 @@ const AboutHeroSection = ({
             }}
         >
             <div className="absolute text-center">
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-white drop-shadow-md mb-4">
+                <h1 className="text-5xl md:text-6xl lg:text-8xl font-extrabold text-white drop-shadow-md mb-4">
                     {title}
                 </h1>
-                <p className="text-base md:text-lg text-white/80">
+                <p className="text-base md:text-lg text-white/80 max-w-xl mx-auto">
                     {subtitle}
                 </p>
             </div>

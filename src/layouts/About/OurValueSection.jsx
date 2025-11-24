@@ -21,8 +21,7 @@ const OurValueSection = () => {
         />
 
       <p className="text-white/80 text-lg leading-relaxed max-w-prose mt-8">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus purus sit amet nulla congue faucibus. Pellentesque nec orci scelerisque, malesuada diam sit amet, iaculis mi. Nullam facilisis tellus elit, eget vestibulum lacus ultrices tempor. Sed varius feugiat neque, at finibus magna dapibus eu. Maecenas posuere congue justo, quis volutpat metus lobortis quis. Duis pharetra condimentum euismod.
-      </p>
+EECS-GSA values a connected, inclusive, and thriving community built on meaningful engagement and shared growth. We prioritize clear communication, strong collaboration across divisions and levels, and continuous improvement of our internal structures. We support financial sustainability, encourage leadership development, and foster unity through programs that strengthen cultural understanding and interpersonal skills. Above all, we strive to create an environment where every member feels empowered to contribute and supported in shaping a vibrant EECS-GS experience.      </p>
     </section>
   );
 };

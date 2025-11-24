@@ -13,7 +13,7 @@ export default function TeamSection({ image, title, subtitle, description, membe
 
       {/* TEXT CONTENT */}
       <div className="md:w-1/3 w-full text-left">
-        <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 text-white">
+        <h2 className="text-5xl md:text-7xl lg:text-6xl font-bold mb-4 text-white">
           {title}
         </h2>
 

@@ -11,8 +11,8 @@ const teamInfo = {
         description:
           "The President and Vice President lead the Internal Affairs division and ensure seamless coordination.",
         members: [
-          { name: "Nahathai Wonganawat", title: "President" },
-          { name: "Napat Pipatchotitham", title: "Vice President" },
+          { name: "Pleng", title: "President" },
+          { name: "Kla", title: "Vice President" },
         ]
       },
       {
@@ -22,8 +22,8 @@ const teamInfo = {
         description:
           "The Secretary and Secretary Assistant manage administration and internal communication.",
         members: [
-          { name: "Gladys Valerie", title: "Secretary of Association" },
-          { name: "Christopher Samuel Fong", title: "Secretary Assistant" },
+          { name: "Gladys", title: "Secretary of Association" },
+          { name: "Christopher", title: "Secretary Assistant" },
         ]
       }
     ]
@@ -36,8 +36,8 @@ const teamInfo = {
     description:
       "The Finance team oversees the association’s financial health, budgeting, and resource allocation. We ensure transparency and efficiency in every project we support.",
     members: [
-      { name: "Napat Leesaksakul", title: "Director of Finance" },
-      { name: "Edbert Louise Suryasatria", title: "Finance Officer" }
+      { name: "Prim", title: "Director of Finance" },
+      { name: "Edbert", title: "Finance Officer" }
     ]
   },
 
@@ -48,10 +48,10 @@ const teamInfo = {
     description:
       "The Public Relations division manages communication and outreach, ensuring that the association is well represented and connected with the broader community.",
     members: [
-      { name: "Nathanael Jason Nababan", title: "Co-director of Public Relations Affairs" },
-      { name: "Marvin Chandra", title: "Co-director of Public Relations Affairs" },
-      { name: "James Liyanto", title: "Public Relations Affairs Officer" },
-      { name: "Stanislaus Patrick Kosasih", title: "Public Relations Affairs Officer" }
+      { name: "Jason", title: "Co-director of Public Relations Affairs" },
+      { name: "Marvin", title: "Co-director of Public Relations Affairs" },
+      { name: "James", title: "Public Relations Affairs Officer" },
+      { name: "Patrick", title: "Public Relations Affairs Officer" }
     ]
   },
 
@@ -62,10 +62,10 @@ const teamInfo = {
     description:
       "Marketing promotes the association’s initiatives, events, and programs through creative campaigns, branding, and storytelling.",
     members: [
-      { name: "Sikka Fazzad Milladia", title: "Director of Marketing" },
-      { name: "Josephine Tiffany Setio", title: "Marketing Officer" },
-      { name: "Nicolas Bradley Chandra", title: "Marketing Officer" },
-      { name: "Darren Putra Dirgo", title: "Marketing Officer" }
+      { name: "Sikka", title: "Director of Marketing" },
+      { name: "Josephine", title: "Marketing Officer" },
+      { name: "Bradley", title: "Marketing Officer" },
+      { name: "Darren", title: "Marketing Officer" }
     ]
   },
 
@@ -76,10 +76,10 @@ const teamInfo = {
     description:
       "Academic Affairs focuses on organizing workshops, lectures, and initiatives that promote learning, academic growth, and research collaboration.",
     members: [
-      { name: "Rowan Delgado-Marquez", title: "Director of Academic Affairs" },
-      { name: "Josephine Tiffany Setio", title: "Marketing Officer" },
-      { name: "Nicolas Bradley Chandra", title: "Marketing Officer" },
-      { name: "Darren Putra Dirgo", title: "Marketing Officer" }
+      { name: "Rowan", title: "Director of Academic Affairs" },
+      { name: "Elaine", title: "Academic Officer" },
+      { name: "Irma", title: "Academic Officer" },
+      { name: "Pattadon", title: "Academic Officer" },
     ]
   },
 
@@ -89,7 +89,12 @@ const teamInfo = {
     image: orientation,
     description:
       "Student Affairs focuses on fostering student engagement, organizing events, and creating a welcoming environment for all students.",
-    members: []
+    members: [
+      { name: "Melvin", title: "Director of Student Affairs" },
+      { name: "Angel", title: "Student Affairs Officer" },
+      { name: "Pat", title: "Student Affairs Officer" },
+      { name: "Farrel", title: "Student Affairs Officer" },
+    ]
   }
 };
 
